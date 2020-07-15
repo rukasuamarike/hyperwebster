@@ -41,7 +41,7 @@ def save_file(file, content): # saves the array to a txt file
 
 def main():
     length = input("maximum word length:")
-    k = web(length)
+    k = web(int(length))
     k.sort()
     k = list(dict.fromkeys(k))
     savefile = input("[save file] filename:")
