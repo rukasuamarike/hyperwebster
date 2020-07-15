@@ -27,6 +27,7 @@ def web(chars):
         else:
             current = it(final)
         final += current # combine lists
+        final = list(dict.fromkeys(final))
     return final
 
 
@@ -46,7 +47,7 @@ def main():
     k = list(dict.fromkeys(k))
     savefile = input("[save file] filename:")
     save_file(savefile, k)
-    print(k)
+    print(k,len(k))
 
 
 if __name__ == '__main__':
